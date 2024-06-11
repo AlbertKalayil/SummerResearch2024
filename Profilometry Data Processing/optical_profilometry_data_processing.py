@@ -21,8 +21,8 @@ Code outputs graph with multiple lines on it <-- profilometry data
 """
 #--------------------------------------------------------------------------------------------------------------
 def main():
-    start_time = time.perf_counter() # Credits @LiamPond
-    directory = 'C:\\Users\\alber\\OneDrive - University of Calgary\\2024Tribometer\\Optical Profilometry Data\\Profilm CSVs'
+    start_time = time.perf_counter()
+    directory = 'directory name'
     
     #print(directory)
     # csv_files = [pd.read_csv(f'{os.path.join(root, file)}') for root, dir, files in os.walk(directory) for file in files if file.endswith('.csv')]
@@ -82,12 +82,12 @@ def main():
             lo_speed_hi_load_dfs.append([dataframe[0], dataframe[1]])
             index4 += 1
 
-    end_time = time.perf_counter() # Credits @LiamPond
-    print(f'Code executed in {end_time - start_time} seconds.') # Credits @LiamPond
+    end_time = time.perf_counter()
+    print(f'Code executed in {end_time - start_time} seconds.')
     
     #----------------------------------------------------------------------------------Save Plot begins
     # version_number = 0
-    # base_path = 'C:\\Users\\alber\\OneDrive - University of Calgary\\2024Tribometer\\Optical Profilometry Data\\Oils\\Graphs\\'
+    # base_path = ''
 
     # while version_number < 4:
     #     new_path = f'{base_path}Graphs Ver {version_number}'
